@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Custom css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap İcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            color: black;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #a35a1e;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .hero .btn {
+            background-color: black;
+            color: white;
+            border-radius: 0;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        .profile-img {
+            max-width: 400px;
+            border-radius: 10px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- Navbar (Menü Çubuğu) -->
+    <div class="#Home">
+        <!-- Navbar (Menü Çubuğu) -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+            <div class="container">
+                <a class="navbar-brand" href="#">Ali Ersöz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-file-earmark-person-fill" href="#About"> Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-person-lines-fill" href="#Services"> Hizmetlerim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-person-lines-fill" href="#Contact"> İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Home Bölümü -->
+    <section class="hero">
+        <div class="container text-center py-3 text-light">
+            <h6 class="display-4 fs-4">Merhaba</h2>
+                <h2 class="display-4 fs-2">Ben Ali Ersöz</h2>
+                <h4 class="display-4 fs-4 text-decoration-underline">Ben Web Tasarımcısıyım!</h4>
+
+                <div class="social-media float-end display-6">
+                    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/aliersoz012"><i class="bi bi-github"></i></a>
+                    <a href="https://www.freelancer.com/u/Alican12?frm=Alican12&sb=t"><i class="bi bi-person-workspace"></i></a>
+                </div>
+        </div>
+    </section>
+
+    <!-- Hakkımda Bölümü -->
+    <section id="About">
+        <div class="container py-3">
+            <div class="row">
+                <!-- Resim -->
+                <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                    <div class="shadow mb-5 bg-body rounded">
+                        <img src="img/me.jpg" class="img-fluid rounded " alt="profil" width="250">
+                    </div>
+                </div>
+
+                <!--Hakkımda Yazısı-->
+                <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                    <div class="card shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Ali Ersöz</h5>
+
+                            <p class="card-text">Merhaba, ben Ali, 18 yaşındayım, Burdur Mehmet Akif Ersoy Üniversitesi
+                                Ağlasun Meslek Yüksekokulu Bilgisayar Programcılığı 1. sınıf öğrencisiyim.</p>
+                            <a href="#Contact" class="btn btn-primary float-start">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Hizmetler Bölümü -->
+
+    <section id="Services" class="Services bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-md-4">
+                    <div class="card shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <h5 class="card-title text-center bi bi-filetype-html"> HTML </h5>
+
+
+                            <p class="card-text">HTML, web sayfaları için standart işaretleme dilidir,
+                                HTML ile kendi web sitenizi oluşturabilirsiniz,
+                                HTML öğrenmesi kolaydır - Keyif alacaksınız!</p>
+                            <a href="#Contact" class="btn btn-primary float-start">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <h5 class="card-title text-center bi bi-filetype-css"> CSS</h5>
+
+                            <p class="card-text">CSS, bir HTML belgesini biçimlendirmek için kullandığımız dildir.
+                                CSS, HTML öğelerinin nasıl görüntülendiğini açıklar.</p>
+                            <a href="#Contact" class="btn btn-primary float-start">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <h5 class="card-title text-center bi bi-filetype-java"> Java</h5>
+
+                            <p class="card-text">JavaScript dünyanın en popüler programlama dilidir,
+                                JavaScript Web'in programlama dilidir,
+                                JavaScript öğrenmesi kolaydır.
+                            </p>
+                            <a href="#Contact" class="btn btn-primary float-start">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <h5 class="card-title text-center bi bi-terminal"> C#</h5>
+
+                            <p class="card-text"> C#, web uygulamaları, masaüstü uygulamaları, mobil uygulamalar,
+                                oyunlar ve çok daha fazlasını geliştirmek için kullanılır.</p>
+                            <a href="#Contact" class="btn btn-primary float-start">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <h5 class="card-title text-center bi bi-bootstrap"> Bootstrap 5</h5>
+
+                            <p class="card-text">Bootstrap 5, duyarlı, mobil öncelikli web siteleri oluşturmak için en
+                                popüler HTML, CSS ve JavaScript çerçevesi olan Bootstrap'in en yeni sürümüdür.</p>
+                            <a href="#Contact" class="btn btn-primary float-start">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <h5 class="card-title text-center bi bi-filetype-sql"> SQL</h5>
+
+                            <p class="card-text">SQL size MySQL, SQL Server, MS Access, Oracle, Sybase ve diğer
+                                veritabanı sistemlerinde SQL'in nasıl kullanılacağını öğretecektir.</p>
+                            <a href="#Contact" class="btn btn-primary float-start">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişiö Bölümü -->
+    <section id="Contact" class="bg-light py-3">
+        <div class="container">
+           
+            <form>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ad</label>
+                    <input type="text" class="form-control" id="name" placeholder="Adınız">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail’iniz">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mesaj</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Mesajınız"></textarea>
+                    <!-- rows = 3 satırlık boşluk demek -->
+                </div>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTERR -->
+    <footer class="bg-dark text-light text-center py-4">
+        <p>Ali ERSÖZ @ 2025 I Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
